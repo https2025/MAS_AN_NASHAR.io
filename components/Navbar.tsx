@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { MenuIcon, XIcon } from './IconComponents';
@@ -27,7 +26,12 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <NavLink to="/" className="flex-shrink-0 flex items-center space-x-3">
-              <img className="h-12 w-12 object-contain" src="/images/logo.png" alt="Logo MAS An-Nashar" />
+              <img
+                className="h-12 w-12 object-contain"
+                src="/public/images/logo.png"
+                alt="Logo MAS An-Nashar"
+                onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+              />
               <span className="text-white text-lg sm:text-xl font-bold">MAS An-Nashar</span>
             </NavLink>
           </div>
