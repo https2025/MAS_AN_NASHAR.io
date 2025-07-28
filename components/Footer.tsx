@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         {/* About School */}
         <div className="space-y-4">
           <div className="flex items-center space-x-3">
-            <img className="h-12 w-12" src="https://i.ibb.co/L8yWd0j/logo-sekolah-png-4.png" alt="Logo MAS An-Nashar" />
+            <img className="h-12 w-12 object-contain" src="/images/logo.png" alt="Logo MAS An-Nashar" />
             <h3 className="text-xl font-bold text-white">MAS An-Nashar</h3>
           </div>
           <p className="text-gray-400">
