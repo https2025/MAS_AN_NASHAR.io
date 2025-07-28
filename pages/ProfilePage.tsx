@@ -15,7 +15,7 @@ const logoPlaceholder = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlna
 
 const teachers = [
     { name: "A. Ummu Aemana, S.Pd.", position: "Bhs. Inggris", imageUrl: photoPlaceholder },
-    { name: "A.Wahyuni, S.Pd.", position: "PKN & Sosiologi", imageUrl: photoPlaceholder },
+    { name: "A.Wahyuni, S.Pd.", position: "PKN & Sosiologi", imageUrl: "https://fileport.io/knPp7edzEXYe" },
     { name: "ST. Aisyah. S.Pd", position: "Bhs. Arab", imageUrl: photoPlaceholder },
     { name: "Hj. Erna Damayanti, S.Pd. M.Pd", position: "Sejarah Indonesia", imageUrl: photoPlaceholder },
     { name: "Wahyuni Ummul Latifah, S.Pd", position: "Mulok", imageUrl: photoPlaceholder },
@@ -29,7 +29,7 @@ const teachers = [
     { name: "Reski Widia Rahmi, S.Kom, Gr", position: "TIK", imageUrl: photoPlaceholder },
     { name: "Riski Islamul Haq, S.Pd", position: "Ekonomi", imageUrl: photoPlaceholder },
     { name: "Sakinahtul Qalbi, S.Pd", position: "Fiqih", imageUrl: photoPlaceholder },
-    { name: "Ratu Mustika, S.Pd", position: "SKI", imageUrl: photoPlaceholder },
+    { name: "Ratu Mustika, S.Pd", position: "SKI", imageUrl: "https://fileport.io/QawyRPEh8nhv" },
     { name: "Rizha Mawarni Raken, S.Pd", position: "Fisika", imageUrl: photoPlaceholder },
 ];
 
