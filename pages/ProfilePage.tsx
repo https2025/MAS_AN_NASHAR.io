@@ -1,4 +1,3 @@
-
 import React from 'react';
 import StaffCard from '../components/StaffCard';
 
@@ -9,6 +8,26 @@ const staff = [
     { name: "Drs. Abdullah Yusuf", position: "Guru Senior Fiqih", imageUrl: "https://picsum.photos/200/200?image=684" },
     { name: "Nurhaliza, S.S", position: "Guru Bahasa Arab", imageUrl: "https://picsum.photos/200/200?image=669" },
     { name: "Budi Santoso, M.Sc", position: "Guru Matematika & Sains", imageUrl: "https://picsum.photos/200/200?image=553" },
+];
+
+const teachers = [
+    { name: "A. Ummu Aemana, S.Pd.", position: "Bahasa Inggris", imageUrl: "https://picsum.photos/200/200?image=91" },
+    { name: "A. Wahyuni, S.Pd.", position: "PKN & Sosiologi", imageUrl: "https://picsum.photos/200/200?image=92" },
+    { name: "ST. Aisyah, S.Pd.", position: "Bahasa Arab", imageUrl: "https://picsum.photos/200/200?image=93" },
+    { name: "Hj. Erna Damayanti, S.Pd., M.Pd.", position: "Sejarah Indonesia", imageUrl: "https://picsum.photos/200/200?image=94" },
+    { name: "Wahyuni Ummul Latifah, S.Pd.", position: "Mulok", imageUrl: "https://picsum.photos/200/200?image=95" },
+    { name: "ST. Aisyah Anwar, S.Pd.", position: "Aqidah", imageUrl: "https://picsum.photos/200/200?image=96" },
+    { name: "Isnawati Toding, S.Pd.", position: "Matematika", imageUrl: "https://picsum.photos/200/200?image=97" },
+    { name: "Nuraeni, S.Pd.", position: "Biologi", imageUrl: "https://picsum.photos/200/200?image=98" },
+    { name: "Fernanda A, S.Pd.", position: "SBK, Prakarya & Keterampilan", imageUrl: "https://picsum.photos/200/200?image=99" },
+    { name: "Dwi Syukriadi, S.Pd., M.Pd.", position: "Bahasa Indonesia", imageUrl: "https://picsum.photos/200/200?image=101" },
+    { name: "Nur Adil, S.Pd.", position: "PJOK", imageUrl: "https://picsum.photos/200/200?image=102" },
+    { name: "Rostina, S.S., M.Pd.", position: "Geografi", imageUrl: "https://picsum.photos/200/200?image=103" },
+    { name: "Reski Widia Rahmi, S.Kom, Gr.", position: "TIK", imageUrl: "https://picsum.photos/200/200?image=104" },
+    { name: "Riski Islamul Haq, S.Pd.", position: "Ekonomi", imageUrl: "https://picsum.photos/200/200?image=105" },
+    { name: "Sakinahtul Qalbi, S.Pd.", position: "Fiqih", imageUrl: "https://picsum.photos/200/200?image=106" },
+    { name: "Ratu Mustika, S.Pd.", position: "SKI", imageUrl: "https://picsum.photos/200/200?image=107" },
+    { name: "Rizha Mawarni Raken, S.Pd.", position: "Fisika", imageUrl: "https://picsum.photos/200/200?image=108" },
 ];
 
 const ProfilePage: React.FC = () => {
@@ -24,7 +43,10 @@ const ProfilePage: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 {/* Sejarah */}
                 <section>
-                    <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">Sejarah Singkat</h2>
+                    <div className="flex flex-col sm:flex-row items-center justify-between mb-8">
+                        <h2 className="text-3xl font-bold text-gray-900 text-center sm:text-left">Sejarah Singkat</h2>
+                        <img src="https://i.ibb.co/L8yWd0j/logo-sekolah-png-4.png" alt="Logo MAS An-Nashar" className="h-24 w-24 mt-4 sm:mt-0"/>
+                    </div>
                     <div className="bg-primary-50 p-8 rounded-lg shadow-md">
                         <p className="text-gray-700 leading-relaxed">
                             Madrasah Aliyah Swasta (MAS) An-Nashar didirikan pada tahun 1998 oleh para ulama dan tokoh masyarakat yang peduli akan pentingnya pendidikan Islam yang berkualitas. Berawal dari sebuah bangunan sederhana, sekolah ini tumbuh dan berkembang berkat kepercayaan masyarakat dan dedikasi para pendidik. Nama "An-Nashar" yang berarti "Sang Penolong" menjadi cerminan dari cita-cita luhur para pendiri untuk menolong generasi muda meraih masa depan yang gemilang dengan berpegang teguh pada ajaran Islam. Sejak awal, MAS An-Nashar telah berkomitmen untuk menyeimbangkan antara kecerdasan intelektual, kematangan emosional, dan kedalaman spiritual.
@@ -57,6 +79,16 @@ const ProfilePage: React.FC = () => {
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Tenaga Pendidik & Kependidikan</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                         {staff.map((person, index) => (
+                            <StaffCard key={index} {...person} />
+                        ))}
+                    </div>
+                </section>
+
+                {/* Guru Mata Pelajaran */}
+                <section className="mt-20">
+                    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Guru Mata Pelajaran</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                        {teachers.map((person, index) => (
                             <StaffCard key={index} {...person} />
                         ))}
                     </div>
