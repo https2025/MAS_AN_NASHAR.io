@@ -10,24 +10,27 @@ const staff = [
     { name: "Budi Santoso, M.Sc", position: "Guru Matematika & Sains", imageUrl: "https://picsum.photos/200/200?image=553" },
 ];
 
+const photoPlaceholder = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZTllYWViIi8+CiAgPGNpcmNsZSBjeD0iMTAwIiBjeT0iMTAwIiByPSI4MCIgZmlsbD0iI2RkZGVlMiIvPgogIDxwYXRoIGQ9Ik0xMDAgODBWMTIwTTgwIDEwMEgxMjAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI4IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+';
+const logoPlaceholder = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZTllYWViIi8+CiAgPHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2cHgiIGZpbGw9IiM5ZWE1YjYiPihMb2dvKTwvdGV4dD4KPC9zdmc+';
+
 const teachers = [
-    { name: "A. Ummu Aemana, S.Pd.", position: "Bahasa Inggris", imageUrl: "https://picsum.photos/200/200?image=91" },
-    { name: "A. Wahyuni, S.Pd.", position: "PKN & Sosiologi", imageUrl: "https://picsum.photos/200/200?image=92" },
-    { name: "ST. Aisyah, S.Pd.", position: "Bahasa Arab", imageUrl: "https://picsum.photos/200/200?image=93" },
-    { name: "Hj. Erna Damayanti, S.Pd., M.Pd.", position: "Sejarah Indonesia", imageUrl: "https://picsum.photos/200/200?image=94" },
-    { name: "Wahyuni Ummul Latifah, S.Pd.", position: "Mulok", imageUrl: "https://picsum.photos/200/200?image=95" },
-    { name: "ST. Aisyah Anwar, S.Pd.", position: "Aqidah", imageUrl: "https://picsum.photos/200/200?image=96" },
-    { name: "Isnawati Toding, S.Pd.", position: "Matematika", imageUrl: "https://picsum.photos/200/200?image=97" },
-    { name: "Nuraeni, S.Pd.", position: "Biologi", imageUrl: "https://picsum.photos/200/200?image=98" },
-    { name: "Fernanda A, S.Pd.", position: "SBK, Prakarya & Keterampilan", imageUrl: "https://picsum.photos/200/200?image=99" },
-    { name: "Dwi Syukriadi, S.Pd., M.Pd.", position: "Bahasa Indonesia", imageUrl: "https://picsum.photos/200/200?image=101" },
-    { name: "Nur Adil, S.Pd.", position: "PJOK", imageUrl: "https://picsum.photos/200/200?image=102" },
-    { name: "Rostina, S.S., M.Pd.", position: "Geografi", imageUrl: "https://picsum.photos/200/200?image=103" },
-    { name: "Reski Widia Rahmi, S.Kom, Gr.", position: "TIK", imageUrl: "https://picsum.photos/200/200?image=104" },
-    { name: "Riski Islamul Haq, S.Pd.", position: "Ekonomi", imageUrl: "https://picsum.photos/200/200?image=105" },
-    { name: "Sakinahtul Qalbi, S.Pd.", position: "Fiqih", imageUrl: "https://picsum.photos/200/200?image=106" },
-    { name: "Ratu Mustika, S.Pd.", position: "SKI", imageUrl: "https://picsum.photos/200/200?image=107" },
-    { name: "Rizha Mawarni Raken, S.Pd.", position: "Fisika", imageUrl: "https://picsum.photos/200/200?image=108" },
+    { name: "A. Ummu Aemana, S.Pd.", position: "Bhs. Inggris", imageUrl: photoPlaceholder },
+    { name: "A.Wahyuni, S.Pd.", position: "PKN & Sosiologi", imageUrl: photoPlaceholder },
+    { name: "ST. Aisyah. S.Pd", position: "Bhs. Arab", imageUrl: photoPlaceholder },
+    { name: "Hj. Erna Damayanti, S.Pd. M.Pd", position: "Sejarah Indonesia", imageUrl: photoPlaceholder },
+    { name: "Wahyuni Ummul Latifah, S.Pd", position: "Mulok", imageUrl: photoPlaceholder },
+    { name: "ST. Aisyah Anwar, S.Pd.", position: "Aqidah", imageUrl: photoPlaceholder },
+    { name: "Isnawati Toding, S.Pd.", position: "Matematika", imageUrl: photoPlaceholder },
+    { name: "Nuraeni, S.Pd", position: "Biologi", imageUrl: photoPlaceholder },
+    { name: "Fernanda A, S.Pd.", position: "SBK, Prakarya & Keterampilan", imageUrl: photoPlaceholder },
+    { name: "Dwi Syukriadi, S.Pd. M.Pd", position: "Bhs. Indonesia", imageUrl: photoPlaceholder },
+    { name: "Nur Adil, S.Pd", position: "PJOK", imageUrl: photoPlaceholder },
+    { name: "Rostina, S.S, M.Pd", position: "Geografi", imageUrl: photoPlaceholder },
+    { name: "Reski Widia Rahmi, S.Kom, Gr", position: "TIK", imageUrl: photoPlaceholder },
+    { name: "Riski Islamul Haq, S.Pd", position: "Ekonomi", imageUrl: photoPlaceholder },
+    { name: "Sakinahtul Qalbi, S.Pd", position: "Fiqih", imageUrl: photoPlaceholder },
+    { name: "Ratu Mustika, S.Pd", position: "SKI", imageUrl: photoPlaceholder },
+    { name: "Rizha Mawarni Raken, S.Pd", position: "Fisika", imageUrl: photoPlaceholder },
 ];
 
 const ProfilePage: React.FC = () => {
@@ -45,7 +48,7 @@ const ProfilePage: React.FC = () => {
                 <section>
                     <div className="flex flex-col sm:flex-row items-center justify-between mb-8">
                         <h2 className="text-3xl font-bold text-gray-900 text-center sm:text-left">Sejarah Singkat</h2>
-                        <img src="https://i.ibb.co/L8yWd0j/logo-sekolah-png-4.png" alt="Logo MAS An-Nashar" className="h-24 w-24 mt-4 sm:mt-0"/>
+                        <img src={logoPlaceholder} alt="Logo MAS An-Nashar" className="h-24 w-24 mt-4 sm:mt-0 bg-gray-200 rounded-md"/>
                     </div>
                     <div className="bg-primary-50 p-8 rounded-lg shadow-md">
                         <p className="text-gray-700 leading-relaxed">
