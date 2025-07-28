@@ -1,76 +1,119 @@
-
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { MapPinIcon, PhoneIcon, MailIcon } from './IconComponents';
+import StaffCard from '../components/StaffCard';
 
-const Footer: React.FC = () => {
-  return (
-    <footer className="bg-primary-900 text-gray-200 pt-12 pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {/* About School */}
-        <div className="space-y-4">
-          <div className="flex items-center space-x-3">
-            <img className="h-12 w-12 object-contain" src="/images/logo.png" alt="Logo MAS An-Nashar" />
-            <h3 className="text-xl font-bold text-white">MAS An-Nashar</h3>
-          </div>
-          <p className="text-gray-400">
-            Membentuk generasi Rabbani yang unggul dalam prestasi, berakhlak mulia, dan siap menghadapi tantangan zaman.
-          </p>
-        </div>
+// Data Staf Pimpinan
+const pimpinan = [
+    { name: 'Dr. H. Ahmad Fauzi, M.Pd.', position: 'Kepala Sekolah', imageUrl: '/images/staff/ahmad-fauzi.jpg' },
+    { name: 'Siti Aminah, S.Pd.I', position: 'Waka Kurikulum', imageUrl: '/images/staff/siti-aminah.jpg' },
+    { name: 'Muhammad Iqbal, S.Kom', position: 'Waka Kesiswaan', imageUrl: '/images/staff/muhammad-iqbal.jpg' },
+    { name: 'Drs. Abdullah Yusuf', position: 'Waka Sarana & Prasarana', imageUrl: '/images/staff/abdullah-yusuf.jpg' },
+    { name: 'Nurhaliza, S.S', position: 'Waka Humas', imageUrl: '/images/staff/nurhaliza.jpg' },
+    { name: 'Budi Santoso, M.Sc', position: 'Kepala Laboratorium', imageUrl: '/images/staff/budi-santoso.jpg' },
+];
 
-        {/* Quick Links */}
-        <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Tautan Cepat</h3>
-          <ul className="space-y-2">
-            <li><Link to="/profil" className="hover:text-accent transition-colors">Profil Sekolah</Link></li>
-            <li><Link to="/program" className="hover:text-accent transition-colors">Program</Link></li>
-            <li><Link to="/pendaftaran" className="hover:text-accent transition-colors">Pendaftaran Online</Link></li>
-            <li><Link to="/alumni" className="hover:text-accent transition-colors">Portal Alumni</Link></li>
-            <li><Link to="/berita" className="hover:text-accent transition-colors">Berita</Link></li>
-            <li><Link to="/galeri" className="hover:text-accent transition-colors">Galeri</Link></li>
-          </ul>
-        </div>
+// Data Guru Mata Pelajaran
+const teachers = [
+    { name: 'A. Ummu Aemana, S.Pd.', subject: 'BHS.inggris', imageUrl: '/images/teachers/a-ummu-aemana.jpg' },
+    { name: 'A.Wahyuni, S.Pd.', subject: 'PKN, SOSIOLOGI', imageUrl: '/images/teachers/a-wahyuni.jpg' },
+    { name: 'ST. Aisyah. S.Pd', subject: 'BHS. ARAB', imageUrl: '/images/teachers/st-aisyah.jpg' },
+    { name: 'Hj. Erna Damayanti, S.Pd. M.Pd', subject: 'SEJARAH INDONESIA', imageUrl: '/images/teachers/erna-damayanti.jpg' },
+    { name: 'Wahyuni Ummul Latifah, S.Pd', subject: 'MULOK', imageUrl: '/images/teachers/wahyuni-ummul-latifah.jpg' },
+    { name: 'ST. Aisyah Anwar, S.Pd.', subject: 'AQIDAH', imageUrl: '/images/teachers/st-aisyah-anwar.jpg' },
+    { name: 'Isnawati Toding, S.Pd.', subject: 'MTK', imageUrl: '/images/teachers/isnawati-toding.jpg' },
+    { name: 'Nuraeni, S.Pd', subject: 'BIOLOGI', imageUrl: '/images/teachers/nuraeni.jpg' },
+    { name: 'Fernanda A, S.Pd.', subject: 'SBK PRAKARYA KETERAMPILAN', imageUrl: '/images/teachers/fernanda-a.jpg' },
+    { name: 'Dwi Syukriadi, S.Pd. M.Pd', subject: 'BHS. INDONESIA', imageUrl: '/images/teachers/dwi-syukriadi.jpg' },
+    { name: 'Nur Adil, S.Pd', subject: 'PJOK', imageUrl: '/images/teachers/nur-adil.jpg' },
+    { name: 'Rostina, S.S, M.Pd', subject: 'GEOGRAFI', imageUrl: '/images/teachers/rostina.jpg' },
+    { name: 'Reski Widia Rahmi, S.Kom, Gr', subject: 'TIK', imageUrl: '/images/teachers/reski-widia-rahmi.jpg' },
+    { name: 'Riski Islamul Haq, S.Pd', subject: 'EKONOMI', imageUrl: '/images/teachers/riski-islamul-haq.jpg' },
+    { name: 'Sakinahtul Qalbi, S.Pd', subject: 'FIQIH', imageUrl: '/images/teachers/sakinahtul-qalbi.jpg' },
+    { name: 'Ratu Mustika, S.Pd', subject: 'SKI', imageUrl: '/images/teachers/ratu-mustika.jpg' },
+    { name: 'Rizha Mawarni Raken, S.Pd', subject: 'FISIKA', imageUrl: '/images/teachers/rizha-mawarni-raken.jpg' },
+];
 
-        {/* Contact Info */}
-        <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Hubungi Kami</h3>
-          <ul className="space-y-3 text-gray-400">
-            <li className="flex items-start">
-              <MapPinIcon className="w-5 h-5 mr-3 mt-1 text-accent" />
-              <span>Jl. Pendidikan No. 123, Kota Harapan, Indonesia</span>
-            </li>
-            <li className="flex items-center">
-              <PhoneIcon className="w-5 h-5 mr-3 text-accent" />
-              <span>(021) 123-4567</span>
-            </li>
-            <li className="flex items-center">
-              <MailIcon className="w-5 h-5 mr-3 text-accent" />
-              <span>info@mas-annashar.sch.id</span>
-            </li>
-          </ul>
+const ProfilePage: React.FC = () => {
+    return (
+        <div className="bg-gray-50">
+            <div className="relative h-64 bg-primary-800">
+                <img src="https://picsum.photos/1200/400?image=2" alt="Profil Sekolah" className="w-full h-full object-cover opacity-30" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-wider">Profil Sekolah</h1>
+                </div>
+            </div>
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                
+                {/* Visi Misi */}
+                <section className="mb-20">
+                    <div className="bg-white p-8 rounded-lg shadow-lg">
+                        <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">Visi & Misi</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+                            <div>
+                                <h3 className="text-2xl font-semibold text-primary-700 mb-3">Visi</h3>
+                                <p className="text-gray-600">"Terwujudnya generasi Islam yang unggul dalam prestasi, luhur dalam budi pekerti, berlandaskan iman dan taqwa, serta siap menghadapi tantangan global."</p>
+                            </div>
+                            <div>
+                                <h3 className="text-2xl font-semibold text-primary-700 mb-3">Misi</h3>
+                                <ul className="list-disc list-inside text-left text-gray-600 space-y-2">
+                                    <li>Menyelenggarakan pendidikan berkualitas yang mengintegrasikan ilmu pengetahuan umum dan agama.</li>
+                                    <li>Membentuk karakter siswa yang berakhlakul karimah sesuai teladan Rasulullah SAW.</li>
+                                    <li>Mengembangkan potensi, bakat, dan minat siswa secara optimal.</li>
+                                    <li>Menciptakan lingkungan belajar yang islami, kondusif, dan inovatif.</li>
+                                    <li>Membekali siswa dengan keterampilan abad ke-21.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                {/* Sejarah Singkat */}
+                <section className="mb-20">
+                    <div className="bg-white p-8 rounded-lg shadow-lg">
+                        <div className="flex flex-col md:flex-row items-center gap-8">
+                            <div className="md:w-2/3">
+                                <h2 className="text-3xl font-bold text-gray-900 mb-4">Sejarah Singkat</h2>
+                                <p className="text-gray-600 mb-4">
+                                    Madrasah Aliyah Swasta (MAS) An-Nashar didirikan pada tahun 2005 oleh para tokoh masyarakat dan ulama setempat yang memiliki kepedulian tinggi terhadap pendidikan generasi muda Islam. Berawal dari sebuah bangunan sederhana, MAS An-Nashar kini telah berkembang menjadi lembaga pendidikan yang representatif dan berprestasi.
+                                </p>
+                                <p className="text-gray-600">
+                                    Dengan komitmen yang kuat, kami terus berupaya meningkatkan kualitas pendidikan untuk menjawab kebutuhan zaman, tanpa meninggalkan akar nilai-nilai keislaman yang menjadi fondasi utama sekolah.
+                                </p>
+                            </div>
+                             <div className="md:w-1/3 flex justify-center">
+                                <img src="/images/logo-madrasah.png" alt="Logo Madrasah" className="h-48 w-48 object-contain" onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/150' }} />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Staf Pimpinan */}
+                <section className="mb-20">
+                    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Struktur Pimpinan</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                        {pimpinan.map((staff, index) => (
+                            <StaffCard key={index} {...staff} />
+                        ))}
+                    </div>
+                </section>
+
+                {/* Tenaga Pendidik */}
+                <section>
+                    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Tenaga Pendidik (Guru)</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                        {teachers.map((teacher, index) => (
+                           <div key={index} className="text-center bg-white p-4 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 flex flex-col items-center">
+                               <img className="mx-auto h-24 w-24 rounded-full object-cover mb-3" src={teacher.imageUrl} alt={teacher.name} onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/150'; }} />
+                               <h3 className="text-base font-semibold text-gray-900 leading-tight">{teacher.name}</h3>
+                               <p className="mt-1 text-sm text-primary-700 font-medium">{teacher.subject}</p>
+                           </div>
+                        ))}
+                    </div>
+                </section>
+
+            </div>
         </div>
-        
-        {/* Social Media */}
-        <div>
-           <h3 className="text-lg font-semibold text-white mb-4">Media Sosial</h3>
-           <div className="flex space-x-4">
-             <a href="#" className="text-gray-400 hover:text-accent transition-colors">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd"></path></svg>
-             </a>
-             <a href="#" className="text-gray-400 hover:text-accent transition-colors">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218 1.791.465 2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm6.406-11.845a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" clipRule="evenodd"></path></svg>
-             </a>
-             <a href="#" className="text-gray-400 hover:text-accent transition-colors">
-                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
-             </a>
-           </div>
-        </div>
-      </div>
-      <div className="mt-8 border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-        <p>&copy; {new Date().getFullYear()} MAS An-Nashar. All rights reserved.</p>
-      </div>
-    </footer>
-  );
+    );
 };
 
-export default Footer;
+export default ProfilePage;
