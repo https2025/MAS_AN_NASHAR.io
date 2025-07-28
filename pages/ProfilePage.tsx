@@ -28,7 +28,7 @@ const teachers = [
     { name: 'Reski Widia Rahmi, S.Kom, Gr', subject: 'TIK', imageUrl: '/public/images/teachers/reski-widia-rahmi.jpg' },
     { name: 'Riski Islamul Haq, S.Pd', subject: 'EKONOMI', imageUrl: '/public/images/teachers/riski-islamul-haq.jpg' },
     { name: 'Sakinahtul Qalbi, S.Pd', subject: 'FIQIH', imageUrl: '/public/images/teachers/sakinahtul-qalbi.jpg' },
-    { name: 'Ratu Mustika, S.Pd', subject: 'SKI', imageUrl: '/public/images/teachers/ratu-mustika.jpg' },
+    { name: 'Ratu Mustika, S.Pd', subject: 'SKI', imageUrl: '/publick/images/teachers/ratu-mustika.jpg' },
     { name: 'Rizha Mawarni Raken, S.Pd', subject: 'FISIKA', imageUrl: '/public/images/teachers/rizha-mawarni-raken.jpg' },
 ];
 
