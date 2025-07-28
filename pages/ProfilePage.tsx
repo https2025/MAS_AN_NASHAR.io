@@ -3,33 +3,33 @@ import StaffCard from '../components/StaffCard';
 
 // Data Staf Pimpinan
 const pimpinan = [
-    { name: 'Dr. H. Ahmad Fauzi, M.Pd.', position: 'Kepala Sekolah', imageUrl: '/images/staff/ahmad-fauzi.jpg' },
-    { name: 'Siti Aminah, S.Pd.I', position: 'Waka Kurikulum', imageUrl: '/images/staff/siti-aminah.jpg' },
-    { name: 'Muhammad Iqbal, S.Kom', position: 'Waka Kesiswaan', imageUrl: '/images/staff/muhammad-iqbal.jpg' },
-    { name: 'Drs. Abdullah Yusuf', position: 'Waka Sarana & Prasarana', imageUrl: '/images/staff/abdullah-yusuf.jpg' },
-    { name: 'Nurhaliza, S.S', position: 'Waka Humas', imageUrl: '/images/staff/nurhaliza.jpg' },
-    { name: 'Budi Santoso, M.Sc', position: 'Kepala Laboratorium', imageUrl: '/images/staff/budi-santoso.jpg' },
+    { name: 'Dr. H. Ahmad Fauzi, M.Pd.', position: 'Kepala Sekolah', imageUrl: '/public/images/staff/ahmad-fauzi.jpg' },
+    { name: 'Siti Aminah, S.Pd.I', position: 'Waka Kurikulum', imageUrl: '/public/images/staff/siti-aminah.jpg' },
+    { name: 'Muhammad Iqbal, S.Kom', position: 'Waka Kesiswaan', imageUrl: '/public/images/staff/muhammad-iqbal.jpg' },
+    { name: 'Drs. Abdullah Yusuf', position: 'Waka Sarana & Prasarana', imageUrl: '/public/images/staff/abdullah-yusuf.jpg' },
+    { name: 'Nurhaliza, S.S', position: 'Waka Humas', imageUrl: '/public/images/staff/nurhaliza.jpg' },
+    { name: 'Budi Santoso, M.Sc', position: 'Kepala Laboratorium', imageUrl: '/public/images/staff/budi-santoso.jpg' },
 ];
 
 // Data Guru Mata Pelajaran
 const teachers = [
-    { name: 'A. Ummu Aemana, S.Pd.', subject: 'BHS.inggris', imageUrl: '/images/teachers/a-ummu-aemana.jpg' },
-    { name: 'A.Wahyuni, S.Pd.', subject: 'PKN, SOSIOLOGI', imageUrl: '/images/teachers/a-wahyuni.jpg' },
-    { name: 'ST. Aisyah. S.Pd', subject: 'BHS. ARAB', imageUrl: '/images/teachers/st-aisyah.jpg' },
-    { name: 'Hj. Erna Damayanti, S.Pd. M.Pd', subject: 'SEJARAH INDONESIA', imageUrl: '/images/teachers/erna-damayanti.jpg' },
-    { name: 'Wahyuni Ummul Latifah, S.Pd', subject: 'MULOK', imageUrl: '/images/teachers/wahyuni-ummul-latifah.jpg' },
-    { name: 'ST. Aisyah Anwar, S.Pd.', subject: 'AQIDAH', imageUrl: '/images/teachers/st-aisyah-anwar.jpg' },
-    { name: 'Isnawati Toding, S.Pd.', subject: 'MTK', imageUrl: '/images/teachers/isnawati-toding.jpg' },
-    { name: 'Nuraeni, S.Pd', subject: 'BIOLOGI', imageUrl: '/images/teachers/nuraeni.jpg' },
-    { name: 'Fernanda A, S.Pd.', subject: 'SBK PRAKARYA KETERAMPILAN', imageUrl: '/images/teachers/fernanda-a.jpg' },
-    { name: 'Dwi Syukriadi, S.Pd. M.Pd', subject: 'BHS. INDONESIA', imageUrl: '/images/teachers/dwi-syukriadi.jpg' },
-    { name: 'Nur Adil, S.Pd', subject: 'PJOK', imageUrl: '/images/teachers/nur-adil.jpg' },
-    { name: 'Rostina, S.S, M.Pd', subject: 'GEOGRAFI', imageUrl: '/images/teachers/rostina.jpg' },
-    { name: 'Reski Widia Rahmi, S.Kom, Gr', subject: 'TIK', imageUrl: '/images/teachers/reski-widia-rahmi.jpg' },
-    { name: 'Riski Islamul Haq, S.Pd', subject: 'EKONOMI', imageUrl: '/images/teachers/riski-islamul-haq.jpg' },
-    { name: 'Sakinahtul Qalbi, S.Pd', subject: 'FIQIH', imageUrl: '/images/teachers/sakinahtul-qalbi.jpg' },
-    { name: 'Ratu Mustika, S.Pd', subject: 'SKI', imageUrl: '/images/teachers/ratu-mustika.jpg' },
-    { name: 'Rizha Mawarni Raken, S.Pd', subject: 'FISIKA', imageUrl: '/images/teachers/rizha-mawarni-raken.jpg' },
+    { name: 'A. Ummu Aemana, S.Pd.', subject: 'BHS.inggris', imageUrl: '/public/images/teachers/a-ummu-aemana.jpg' },
+    { name: 'A.Wahyuni, S.Pd.', subject: 'PKN, SOSIOLOGI', imageUrl: '/public/images/teachers/a-wahyuni.jpg' },
+    { name: 'ST. Aisyah. S.Pd', subject: 'BHS. ARAB', imageUrl: '/public/images/teachers/st-aisyah.jpg' },
+    { name: 'Hj. Erna Damayanti, S.Pd. M.Pd', subject: 'SEJARAH INDONESIA', imageUrl: '/public/images/teachers/erna-damayanti.jpg' },
+    { name: 'Wahyuni Ummul Latifah, S.Pd', subject: 'MULOK', imageUrl: '/public/images/teachers/wahyuni-ummul-latifah.jpg' },
+    { name: 'ST. Aisyah Anwar, S.Pd.', subject: 'AQIDAH', imageUrl: '/public/images/teachers/st-aisyah-anwar.jpg' },
+    { name: 'Isnawati Toding, S.Pd.', subject: 'MTK', imageUrl: '/public/images/teachers/isnawati-toding.jpg' },
+    { name: 'Nuraeni, S.Pd', subject: 'BIOLOGI', imageUrl: '/public/images/teachers/nuraeni.jpg' },
+    { name: 'Fernanda A, S.Pd.', subject: 'SBK PRAKARYA KETERAMPILAN', imageUrl: '/public/images/teachers/fernanda-a.jpg' },
+    { name: 'Dwi Syukriadi, S.Pd. M.Pd', subject: 'BHS. INDONESIA', imageUrl: '/public/images/teachers/dwi-syukriadi.jpg' },
+    { name: 'Nur Adil, S.Pd', subject: 'PJOK', imageUrl: '/public/images/teachers/nur-adil.jpg' },
+    { name: 'Rostina, S.S, M.Pd', subject: 'GEOGRAFI', imageUrl: '/public/images/teachers/rostina.jpg' },
+    { name: 'Reski Widia Rahmi, S.Kom, Gr', subject: 'TIK', imageUrl: '/public/images/teachers/reski-widia-rahmi.jpg' },
+    { name: 'Riski Islamul Haq, S.Pd', subject: 'EKONOMI', imageUrl: '/public/images/teachers/riski-islamul-haq.jpg' },
+    { name: 'Sakinahtul Qalbi, S.Pd', subject: 'FIQIH', imageUrl: '/public/images/teachers/sakinahtul-qalbi.jpg' },
+    { name: 'Ratu Mustika, S.Pd', subject: 'SKI', imageUrl: '/public/images/teachers/ratu-mustika.jpg' },
+    { name: 'Rizha Mawarni Raken, S.Pd', subject: 'FISIKA', imageUrl: '/public/images/teachers/rizha-mawarni-raken.jpg' },
 ];
 
 const ProfilePage: React.FC = () => {
@@ -81,7 +81,7 @@ const ProfilePage: React.FC = () => {
                                 </p>
                             </div>
                              <div className="md:w-1/3 flex justify-center">
-                                <img src="/images/logo-madrasah.png" alt="Logo Madrasah" className="h-48 w-48 object-contain" onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/150' }} />
+                                <img src="/public/images/logo-madrasah.png" alt="Logo Madrasah" className="h-48 w-48 object-contain" onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://via.placeholder.com/150'; }} />
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@ const ProfilePage: React.FC = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         {teachers.map((teacher, index) => (
                            <div key={index} className="text-center bg-white p-4 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 flex flex-col items-center">
-                               <img className="mx-auto h-24 w-24 rounded-full object-cover mb-3" src={teacher.imageUrl} alt={teacher.name} onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/150'; }} />
+                               <img className="mx-auto h-24 w-24 rounded-full object-cover mb-3" src={teacher.imageUrl} alt={teacher.name} onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://via.placeholder.com/150'; }} />
                                <h3 className="text-base font-semibold text-gray-900 leading-tight">{teacher.name}</h3>
                                <p className="mt-1 text-sm text-primary-700 font-medium">{teacher.subject}</p>
                            </div>
